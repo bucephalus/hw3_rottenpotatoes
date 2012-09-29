@@ -14,8 +14,10 @@ group :development, :test do
   gem 'launchy'
 end
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
+  gem 'spork-rails'
+  gem 'autotest-rails'
 end
 group :production do
 #  gem 'pg'
@@ -24,7 +26,7 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'therubyracer'              
+  gem 'therubyracer'
   gem 'sass-rails', "  ~> 3.1.0"
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
